@@ -2,7 +2,7 @@
 
 Projects created for "Object Oriented Technologies" course at AGH University of Science and Technology.
 
-## [Concept](docks.md)
+## [Concept](docs.md)
 
 ## Contributors
 * Łukasz Pawlak
