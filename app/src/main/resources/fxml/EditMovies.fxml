@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.edu.agh.ii.cinemaProject.controller.MovieController" VBox.vgrow="ALWAYS">
+    <top>
+        <VBox VBox.vgrow="ALWAYS">
+            <HBox fx:id="hBoxFilters">
+                <TextField fx:id="name" promptText="Enter search text"/>
+                <TextField fx:id="minDuration" promptText="Enter minimal duration"/>
+                <TextField fx:id="maxDuration" promptText="Enter maximal duration"/>
+            </HBox>
+            <ListView styleClass="movieListView" fx:id="moviesListView" VBox.vgrow="ALWAYS" prefHeight="500"/>
+        </VBox>
+    </top>
+    <bottom>
+        <Pagination fx:id="pagination"/>
+    </bottom>
+    <stylesheets>
+        <URL value="@../css/EditMoviesPage.css"/>
+    </stylesheets>
+</BorderPane>

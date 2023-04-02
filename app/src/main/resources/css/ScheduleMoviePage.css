@@ -1,0 +1,123 @@
+Button{
+    -fx-background-color: #56081A;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+    -fx-border-color: crimson;
+    -fx-border-radius: 20;
+    -fx-pref-height: 20;
+    -fx-pref-width: 180;
+    -fx-background-insets: 10 20;
+    -fx-border-insets: 10 20;
+}
+Button:hover{
+    -fx-background-color: #340609;
+    -fx-text-fill: grey;
+    -fx-border-color: #dd0000;
+    -fx-border-width: 2;
+}
+
+.scheduleTableView{
+    -fx-background-color: transparent;
+}
+
+.scheduleTableView *{
+    -fx-text-fill: white;
+}
+
+.scheduleTableView .column-header-background{
+    -fx-background-color: rgba(255, 255, 255, .30);
+}
+
+.scheduleTableView .column-header {
+    -fx-background-color: transparent;
+}
+
+.scheduleTableView .table-row-cell{
+    -fx-background-color: rgba(255, 255, 255, .15);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0;
+    -fx-min-height: 30;
+}
+
+.scheduleTableView .table-row-cell:odd{
+    -fx-background-color: rgba(200, 200, 200, .15);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0;
+}
+
+.scheduleTableView .table-row-cell:selected {
+    -fx-background-color: rgba(185, 14, 21, 0.15);
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.scheduleTableView .table-row-cell:filled:hover {
+    -fx-background-color: rgba(255, 0, 0, 0.15);
+}
+
+.scheduleTableView .table-row-cell:empty {
+    -fx-opacity: 0;
+}
+
+.scheduleTableView .list-view{
+    -fx-background-color: rgba(201, 201, 201, 0.75);
+}
+
+/*.scheduleTableView .table-row-cell >.list-cell >*{*/
+/*    -fx-text-fill: black;*/
+/*}*/
+
+.scheduleTableView .list-cell {
+    -fx-min-height: 20;
+    -fx-font-size: 12px;
+    -fx-padding: 0;
+    -fx-font-weight: normal;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+.scheduleTableView .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(185, 14, 21, 0.75);
+}
+.scheduleTableView .list-cell:odd {
+    -fx-background-color: rgba(66, 66, 66, 0.3);
+}
+.scheduleTableView .list-cell:even {
+    -fx-background-color: rgba(97, 97, 97, 0.3);
+}
+
+.scheduleTableView .list-cell:filled:hover {
+    -fx-background-color: rgba(255, 0, 0, 0.75);
+    -fx-text-fill: white;
+}
+.scheduleTableView .list-cell:empty{
+    -fx-opacity: 0;
+}
+.scheduleTableView .scroll-bar:horizontal {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+.text-field {
+    -fx-background-color: transparent;
+    -fx-text-box-border: transparent;
+    -fx-background:transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-background-radius: 0 ;
+    -fx-border-width: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+.text-field:focused {
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-background-radius: 0 ;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: red;
+}

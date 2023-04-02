@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.ii.cinemaProject.controller.MainPageController">
+    <left>
+        <BorderPane>
+            <top>
+                <ListView fx:id="categoriesListView" styleClass="menuList" />
+            </top>
+            <bottom>
+                <Button mnemonicParsing="false" onAction="#logout" styleClass="logoutButton" text="Logout" />
+            </bottom>
+        </BorderPane>
+    </left>
+    <center>
+        <VBox alignment="CENTER" styleClass="frostedGlass" BorderPane.alignment="CENTER">
+            <Label styleClass="headline" text="Welcome to Cinema Project" />
+            <Label styleClass="headline" text="by ParszywaZgraja" />
+            <Label styleClass="subHeadline" text="You can select the bookmark you are interested" />
+            <Label styleClass="subHeadline" text="in from the panel on the left" />
+        </VBox>
+    </center>
+    <stylesheets>
+        <URL value="@../css/MainPage.css" />
+    </stylesheets>
+</BorderPane>

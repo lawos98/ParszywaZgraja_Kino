@@ -1,0 +1,82 @@
+
+root {
+    display: block;
+}
+
+.root{
+    -fx-background-image: url('../images/LoginBackgrouund.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+.mainBox{
+    -fx-alignment: center;
+}
+.frostedGlass{
+    -fx-background-color: rgba(255, 255, 255, .15);
+    -fx-padding: 10;
+    -fx-border-insets: 10;
+    -fx-background-insets: 10;
+    -fx-border-width: 1;
+    -fx-border-color: grey;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.headline,.subHeadline,.normalTextRight,.normalTextLeft{
+    -fx-text-alignment: center;
+    -fx-padding: 0 10;
+}
+
+.headline{
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-max-width: 250;
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+    -fx-text-alignment: left;
+}
+.subHeadline{
+    -fx-text-fill: #dadada;
+    -fx-font-size: 16px;
+}
+.normalTextRight,.normalTextLeft{
+     -fx-text-fill: #ababab;
+     -fx-font-size: 12px;
+ }
+.normalTextRight{
+    -fx-alignment: center-right;
+}
+.normalTextLeft{
+    -fx-alignment: center-left;
+}
+Button{
+    -fx-background-color: #56081A;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+    -fx-border-color: crimson;
+    -fx-border-radius: 20;
+    -fx-pref-height: 20;
+    -fx-pref-width: 180;
+}
+Button:hover{
+    -fx-background-color: #340609;
+    -fx-text-fill: grey;
+    -fx-border-color: #dd0000;
+    -fx-border-width: 2;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-text-box-border: transparent;
+    -fx-background:transparent;
+    -fx-border-insets: 20;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 ;
+    -fx-text-fill: white;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #56081A;
+}
+.text-field:focused {
+    -fx-border-color: red;
+}

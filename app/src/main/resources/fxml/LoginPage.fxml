@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox styleClass="mainBox" fillWidth="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.ii.cinemaProject.controller.LoginPageController">
+    <VBox styleClass="box">
+        <Label styleClass="mainLabel" text="Welcome to Project Cinema"/>
+        <Label styleClass="emailLabel" text="Please type your email"/>
+        <TextField styleClass="emailTextField" fx:id="email" onAction="#login"/>
+        <Label styleClass="errorLabel" fx:id="errorLabel"  text="Error" visible="false"/>
+        <Button styleClass="loginButton" onAction="#login" text="Login"/>
+    </VBox>
+    <stylesheets>
+        <URL value="@../css/LoginPage.css" />
+    </stylesheets>
+</VBox>

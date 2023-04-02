@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.edu.agh.ii.cinemaProject.controller.ScheduleMoviesController">
+    <center>
+        <TableView styleClass="scheduleTableView" fx:id="scheduleView" editable="true">
+            <columns>
+                <TableColumn fx:id="scheduleMovie" text="Movie"/>
+                <TableColumn maxWidth="1000" fx:id="scheduleHall" text="Hall"/>
+                <TableColumn maxWidth="3000" fx:id="scheduleDate" text="Date"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </center>
+    <right>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#handleAddUserAction" text="Add"/>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeleteScheduleAction" text="Delete"/>
+        </VBox>
+    </right>
+    <stylesheets>
+        <URL value="@../css/ScheduleMoviePage.css" />
+    </stylesheets>
+</BorderPane>
